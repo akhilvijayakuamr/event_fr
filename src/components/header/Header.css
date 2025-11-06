@@ -1,0 +1,147 @@
+.header{
+    background-color: #000;     
+    color: #fff;
+    width: 100vw;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    
+    
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background: linear-gradient(to right, #580652, #67085f);
+}
+
+
+.headerLeft ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.headerLeft ul Link{
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.headerRight ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.headerRight ul li{
+    margin-right: 20px;
+    font-size:15px;
+}
+
+
+.headerLeft ul li{
+    margin-right: 20px;
+    font-size:15px;
+}
+
+
+
+
+.headerRight ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.headerLeft ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.headerLeft ul li:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.headerRight ul li:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+.headerRightTab{
+    display: none;
+}
+
+.headerRightMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    background: linear-gradient(to right, #a917a0, #67085f);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.headerRightMobile ul{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.headerRightMobile ul li{
+    margin-bottom: 10px;
+}
+
+.headerRightMobile ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerRightMobile ul li:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    .headerRightTab{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        right: 20px;
+        margin: 20px;
+        padding: 10px;
+        margin-left: auto;   
+    
+    }
+
+    .headerRight{
+        display: none;
+    }
+
+    .headerLeft{
+        display: none;
+    }
+
+}
+
+
+    
+    

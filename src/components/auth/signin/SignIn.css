@@ -1,0 +1,51 @@
+.signincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../../assets/images/bg-image-frontpage.jpg");
+    background-size: cover;
+    background-position: center;
+}               
+
+.signincontainer h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.signincontainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #580652, #67085f);
+    color: white;
+}
+
+.signincontainer form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signincontainer form button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #580652;
+    color: white;
+    cursor: pointer;
+}
+

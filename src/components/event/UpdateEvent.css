@@ -1,0 +1,121 @@
+
+.createeventpage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-image: url("../../assets/images/bg-image-frontpage.jpg");
+  font-family: 'Inter', sans-serif;
+}
+
+.createeventcontainer {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px 30px;
+  background: linear-gradient(to right, #580652, #67085f);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.createeventcontainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.createeventcontainer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+.createeventcontainer input,
+.createeventcontainer textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background: #f3f4f7;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.createeventcontainer input:focus,
+.createeventcontainer textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  background: #ffffff;
+}
+
+.createeventcontainer input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #2563eb;
+  background: linear-gradient(90deg, rgba(37,99,235,0.05), rgba(37,99,235,0.1));
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.preview-image:hover {
+  transform: scale(1.03);
+}
+
+
+.createeventcontainer button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  transition: all 0.3s ease;
+}
+
+.createeventcontainer button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+@media (max-width: 650px) {
+  .createeventcontainer {
+    padding: 30px 20px;
+  }
+  .preview-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .createeventcontainer h1 {
+    font-size: 1.6rem;
+  }
+  .preview-image {
+    height: 180px;
+  }
+}

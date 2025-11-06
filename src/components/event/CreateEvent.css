@@ -1,0 +1,58 @@
+.createeventpage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    background-image: url("../../assets/images/bg-image-frontpage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.createeventcontainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 90px auto;
+    background: linear-gradient(to right, #580652, #67085f);
+    
+}
+    
+
+
+.createeventcontainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.createeventcontainer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+    
+
+.createeventcontainer button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.createeventcontainer button:hover {
+    background-color: #218838;
+}

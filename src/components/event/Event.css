@@ -1,0 +1,129 @@
+/* Main container centers the event card */
+.event-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #f3f4f7, #dbeafe);
+  padding: 2rem;
+  margin-top: 30px;
+  background-image:  url("../../assets/images/bg-image-frontpage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Event card styling */
+.event-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+.event-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Content styling */
+.event-content {
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.event-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.event-date {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.event-description {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.event-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.event-button:hover {
+  background: #1d4ed8;
+}
+
+
+
+.menu-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  padding: 4px;
+}
+
+
+.menu-dropdown {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  min-width: 100px;
+  z-index: 10;
+}
+
+
+.menu-dropdown button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background-color: #f3f4f6;
+}
+
+.menu-container:hover .menu-dropdown {
+  display: flex;
+}
+
+.event-card {
+  position: relative;
+}

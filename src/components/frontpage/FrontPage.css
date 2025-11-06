@@ -1,0 +1,49 @@
+/* .mainContainer{
+    background-image: url("../../assets/images/event_background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.frontpagecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../assets/images/bg-image-frontpage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.frontpagecontainer h6{
+    font-family: cursive;
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.frontpagecontainer p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+    .frontpagecontainer{
+        height: 100vh;
+    }
+
+    .frontpagecontainer h6{
+        font-size: 1rem;
+
+    }
+
+    .frontpagecontainer p{
+        font-size: 2rem;
+    }
+}
